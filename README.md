@@ -18,6 +18,6 @@ DTO 에서 엔티티로 변환됨
 기본생성자 추가 어노테이션(롬복)   기본생성자: 매개변수가 아무것도 없는 생성자
 
 <h2>데이터 조회과정</h2>
-
+<img src="https://github.com/skal48/springboot_JPA/blob/main/%EA%B7%B8%EB%A6%BC/read_process.png?raw=true">
 
               
