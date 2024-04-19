@@ -21,12 +21,12 @@ public class ArticleController {
   @Autowired //스프링부트가 미리 생성해 놓은 리파지터리 객체 주입
   private ArticleRepository articleRepository;
 
-  @GetMapping("/article/new")
+  @GetMapping("/articles/new")
   public String newArticleForm(){
     return "article/new";
   }
 
-  @PostMapping("/article/create")
+  @PostMapping("/articles/create")
   public String CreateArticle(ArticleForm form){
     //System.out.println(form.toString());
     // 1. DTO를 엔티티로 변환
@@ -37,10 +37,10 @@ public class ArticleController {
     Article saved = articleRepository.save(article);
     //System.out.println(saved.toString());
     log.info(saved.toString());
-    return "article/new";
+    return "redirect:/articles/" + saved.getId();
   }
 
-  @GetMapping("/article/{id}")
+  @GetMapping("/articles/{id}")
   public String show(@PathVariable Long id, Model model){
     log.info("id: " + id);
     //1. id를 조회해서 데이터 가져오기
