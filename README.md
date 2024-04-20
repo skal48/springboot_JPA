@@ -20,4 +20,5 @@ DTO 에서 엔티티로 변환됨
 <h2>데이터 조회과정</h2>
 <img src="https://github.com/skal48/springboot_JPA/blob/main/%EA%B7%B8%EB%A6%BC/read_process.png?raw=true">
 
-              
+<h2>데이터 수정과정</h2>             
+<img src="https://github.com/skal48/springboot_JPA/blob/main/%EA%B7%B8%EB%A6%BC/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A0%95.png?raw=true">
