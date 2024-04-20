@@ -22,3 +22,11 @@ DTO 에서 엔티티로 변환됨
 
 <h2>데이터 수정과정</h2>             
 <img src="https://github.com/skal48/springboot_JPA/blob/main/%EA%B7%B8%EB%A6%BC/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%88%98%EC%A0%95.png?raw=true">
+
+<h2>리다이렉트</h2>
+
+클라이언트가 보낸 요청을 마친 후 계속해서 처리할 다름 ㅏ요청 주소를 재지시하는 것, 이를 통해 분리된 기능을 하나의 연속적인 흐름으로 연결할 수 있다. <br/>
+형식 - return "redirect:URL 주소"; 
+
+<h2>RedirectAttributes</h2>
+RedirectAttributes 객체의  addFlashAttribute() 메서드는 리다이렉트된 페이지에서 사용할 일회성 데이터를 등록할 수 있음
