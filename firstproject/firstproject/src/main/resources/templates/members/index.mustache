@@ -4,8 +4,8 @@
   <thead>
   <tr>
     <th scope="col">Id</th>
-    <th scope="col">Title</th>
-    <th scope="col">Content</th>
+    <th scope="col">Email</th>
+    <th scope="col">Password</th>
   </tr>
   </thead>
   <tbody>
@@ -14,11 +14,12 @@
   {{#memberArrayList}}
   <tr>
     <th>{{id}}</th>
-    <td>{{email}}</td>
+    <td><a href="/members/{{id}}">{{email}}</a></td>
     <td>{{password}}</td>
   </tr>
   {{/memberArrayList}}
   </tbody>
 </table>
 
+<a href="/members/new">새로만들기</a>
 {{>layouts/footer}}

@@ -18,7 +18,10 @@ import java.util.ArrayList;
 public class MemberController {
   @Autowired
   private MemberRepository memberRepository;
-
+  @GetMapping("/members/new")
+  public String newMemberFrom(){
+    return "members/new";
+  }
   @GetMapping("/signup")
   public String signupPage() {
     return "members/new";
@@ -34,20 +37,39 @@ public class MemberController {
     Member saved = memberRepository.save(member);
     //System.out.println(saved.toString());
     log.info(saved.toString());
-    return "";
+    return "redirect:/members/"+ saved.getId();
   }
 
-  @GetMapping("/member/{id}")
+  @GetMapping("/members/{id}")
   public String show(@PathVariable Long id, Model model) {
     Member memberEntity = memberRepository.findById(id).orElse(null);
     model.addAttribute("member", memberEntity);
-    return "member/show";
+    return "members/show";
   }
 
   @GetMapping("/members")
   public String index(Model model){
     ArrayList<Member> memberArrayList = memberRepository.findAll();
     model.addAttribute("memberArrayList", memberArrayList);
-    return "member/index";
+    return "members/index";
   }
+
+  @GetMapping("/members/{id}/edit")
+  public String edit(@PathVariable Long id, Model model){
+    Member memberEntity = memberRepository.findById(id).orElse(null);
+    model.addAttribute("member", memberEntity);
+    return "members/edit";
+  }
+
+  @PostMapping("/members/update")
+  public String update(MemberForm memberForm) {
+    Member memberEntity = memberForm.toEntity();
+    Member target = memberRepository.findById(memberEntity.getId()).orElse(null);
+
+    if(target != null){
+      memberRepository.save(memberEntity);
+    }
+    return "redirect:/members/" + memberEntity.getId();
+  }
+
 }
