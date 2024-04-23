@@ -32,6 +32,10 @@ DTO 에서 엔티티로 변환됨
 RedirectAttributes 객체의  addFlashAttribute() 메서드는 리다이렉트된 페이지에서 사용할 일회성 데이터를 등록할 수 있음
 
 <h2>삭제과정</h2>
-
 <img src="https://raw.githubusercontent.com/skal48/springboot_JPA/5d4cd3fa005f76362b76ac244bd8a70c08de6e4a/%EA%B7%B8%EB%A6%BC/%EB%8D%B0%EC%9D%B4%ED%84%B0%20%EC%82%AD%EC%A0%9C.png">
+
+<h2>REST API</h2>
+서버의 자원을 클라이언트에 구애받지 않고 사용할 수 있게 설계하는 방식. HTTP 요청에 대한 응답으로 서버의 자원을 반환. 서버에서 보내는 응답이 특정기기에 종속되지 않도록 모든 기기에서 통용될 수 있는 데이터 반환.<br/>
+응답데이터는 JSON 이다.
+
 
