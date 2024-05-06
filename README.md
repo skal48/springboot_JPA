@@ -42,5 +42,12 @@ RedirectAttributes 객체의  addFlashAttribute() 메서드는 리다이렉트�
 PUT : 기존 데이터를 전부 새 내용으로 변경한다. 기존데이터가 없다면 새로 생성
 PATCH : 기존 데이터 중에서 일부만 새 내용으로 변경한다.
 
+<h2>@RequestBody</h2>
+@RequestBody 는 본문에 실어 보내는 데이터를 메서드의 매개변수로 받아 올 수 있다. 
+
+<h2>ResponseEntity와 HttpStatus</h2>
+ResponseEntity는 REST 컨트롤러의 반환형, REST API의 응답을 위해 사용하는 클래스이다. 요청을 응답할 때 이 클래스에 HTTP 샅채모드, 헤더, 본문을 실어 보낼 있다. <br/>
+HttpStatus 는 HTTP 상태 모드를 관리하는 클래스로 다양한 Enum 타입과 관련한 메서드를 가진다. Enum 타입은 열거형으로 여러 상수로 이루어진 고정 집합을 가진다. <br/>
+200 -> HttpStatus.OK /  201 -> HttpStatus.CREATED /   400 -> HttpStatus.BAD_REQUEST
 
 
