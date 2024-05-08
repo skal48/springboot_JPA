@@ -50,4 +50,4 @@ ResponseEntity는 REST 컨트롤러의 반환형, REST API의 응답을 위해 �
 HttpStatus 는 HTTP 상태 모드를 관리하는 클래스로 다양한 Enum 타입과 관련한 메서드를 가진다. Enum 타입은 열거형으로 여러 상수로 이루어진 고정 집합을 가진다. <br/>
 200 -> HttpStatus.OK /  201 -> HttpStatus.CREATED /   400 -> HttpStatus.BAD_REQUEST
 
-
+<h2>iterable 공부하기 </h2>
