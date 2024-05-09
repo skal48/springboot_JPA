@@ -50,4 +50,9 @@ ResponseEntity는 REST 컨트롤러의 반환형, REST API의 응답을 위해 �
 HttpStatus 는 HTTP 상태 모드를 관리하는 클래스로 다양한 Enum 타입과 관련한 메서드를 가진다. Enum 타입은 열거형으로 여러 상수로 이루어진 고정 집합을 가진다. <br/>
 200 -> HttpStatus.OK /  201 -> HttpStatus.CREATED /   400 -> HttpStatus.BAD_REQUEST
 
-<h2>iterable 공부하기 </h2>
+<h2>iterable </h2>
+iterable은 Collection의 상위 인터페이스이며, 하위클래스에서 iterator()의 생성을 강제하는 역활<br/>Iterable 인터페이스를 구현하는 것은 객체가 for-each loop 선언문의 타겟이 되도록 하는 것이다. 즉, forEach 제공하는 인터페이스
+
+<h2>TDD(Test Driven Development</h2>
+테스트주도개발이란 일단 테스트 코드를 만든 후 이를 통과하는 최고한의 코드부터 시작해 점진적으로 코드를 개선 및 확장해 나가는 개발 방식 <br/><br/>
+<img src="https://www.icterra.com/wp-content/uploads/2020/01/Test_01-1.png" width="512px">
