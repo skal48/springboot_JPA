@@ -60,7 +60,7 @@ public class ArticleService {
     }
     //3. 대상 삭제하기
     articleRepository.delete(target);
-    return target; //body(null) 대신 build()가능
+    return target;
     // build 메서드는 HTTP 응답의 body가 없는 ResponseEntity 객체 생성
   }
   @Transactional
