@@ -1,15 +1,10 @@
 package com.example.firstproject.service;
 
-import com.example.firstproject.DTO.CoffeeDto;
+import com.example.firstproject.dto.CoffeeDto;
 import com.example.firstproject.entity.Coffee;
 import com.example.firstproject.repository.CoffeeRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
-import java.util.Iterator;
-import java.util.List;
 
 @Service
 public class CoffeeService {

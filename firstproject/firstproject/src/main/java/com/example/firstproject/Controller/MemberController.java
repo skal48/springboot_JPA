@@ -1,6 +1,6 @@
 package com.example.firstproject.Controller;
 
-import com.example.firstproject.DTO.MemberForm;
+import com.example.firstproject.dto.MemberForm;
 import com.example.firstproject.entity.Member;
 import com.example.firstproject.repository.MemberRepository;
 import lombok.extern.slf4j.Slf4j;
