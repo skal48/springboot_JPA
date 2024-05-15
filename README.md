@@ -64,8 +64,24 @@ iterable은 Collection의 상위 인터페이스이며, 하위클래스에서 it
 다대일 관계인 경우 @ManyToOne 어노테이션을 붙여 다대일 관계로 설정 <br/>
 다대일 관계에서 매핑되는 키를 지정
 
-<h2>@Query(value ="쿼리", nativeQuery = true) </h2>
-SQL과 유사한 JPQL(Java Persistance Query Language)
+<h2>@Query(value ="쿼리", nativeQuery = true)/@DataJpaTest /@DisplayName("테스트_결과에_보여_줄_이름") </h2>
+SQL과 유사한 JPQL(Java Persistance Query Language) 이라는 객체지향 쿼리언어를 통해 복잡한 쿼리 처리를 지원한다. true로 설정을 하면 기존 SQL문을 그대로 사용할 수 있다. where 절에 조건을 쓸 때 매개변수 앞에 꼭 콜론을(:) 붙여 주어야 한다. <br/>
+@DataJpaTest는 테스트에서 해당 클래스를 JPA와 연동해 테스트하겠다는 선언이다. 
+@DisplayName() 은 테스트 이름을 붙일 때 사용한다. 기본적으로 테스트 이름은 메서드 이름을 따라가는데 메서드 이름을 그대로 둔 채 테스트 이름을 자꾸고 싶을 때때 이 어노테이션을 사용한다. 
+
+<h2> 스트림의 특징</h2>
+스트림은 자바의 컬렉션, 리스트와 해시맵 등의 데이터 묶음을 요소별로 순차적으로 조작하는게 좋다. 스트림의 주요특징 <br/>
+<li>원본 데이터를 읽기만 하고 변경하지 않는다.</li>
+<li>정렬된 결과를 컬렉션이나 배열에 담아 반환할 수 있다.</li>
+<li>내부 반복문으로, 반복분이 코드상에 노출되지 않는다. </li>
+
+<h2>orElseThrow()</h2>
+orElseThrow() 메서드는 Optional 객체 (존재할 수도 있지만 안 할 수도 있는 객체, 즉 null이 될 수고 있는 객체)에 값이 존재하면 그 값을 반환하고, 값이 존재하지 않으면 전달값으로 보낸 예외를 발생시키는 메서드이다. <br/>
+전달값으로 IllegalArgumentException 클래스를 사용하면 메서드가 잘못됐거나 부적합한 전달값을 보냈음을 나타낸다. 
+
+<h2>@JsonProperty("키_이름")</h2>
+JSON 데이터의 키(key)이름과 이를 받아 저장하는 DTO 에 선언된 필드의 변수명이 다를 경우 DTO필드 위에 @JsonProperty을 작성해 주어야 한다. 해당 키와 변수가 자동으로 매핑된다. 
+
 
 
 
