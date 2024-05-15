@@ -56,3 +56,16 @@ iterable은 Collection의 상위 인터페이스이며, 하위클래스에서 it
 <h2>TDD(Test Driven Development</h2>
 테스트주도개발이란 일단 테스트 코드를 만든 후 이를 통과하는 최고한의 코드부터 시작해 점진적으로 코드를 개선 및 확장해 나가는 개발 방식 <br/><br/>
 <img src="https://www.icterra.com/wp-content/uploads/2020/01/Test_01-1.png" width="512px">
+
+<h2>JpaRepository 인터페이스 계층구조</h2>
+<img src="https://github.com/skal48/springboot_JPA/blob/main/%EA%B7%B8%EB%A6%BC/JpaRepository.png?raw=true">
+
+<h2>@ManyToOne/@JoinColumn(name="외래키_이름")</h2>
+다대일 관계인 경우 @ManyToOne 어노테이션을 붙여 다대일 관계로 설정 <br/>
+다대일 관계에서 매핑되는 키를 지정
+
+<h2>@Query(value ="쿼리", nativeQuery = true) </h2>
+SQL과 유사한 JPQL(Java Persistance Query Language)
+
+
+
