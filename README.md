@@ -82,6 +82,19 @@ orElseThrow() 메서드는 Optional 객체 (존재할 수도 있지만 안 할 �
 <h2>@JsonProperty("키_이름")</h2>
 JSON 데이터의 키(key)이름과 이를 받아 저장하는 DTO 에 선언된 필드의 변수명이 다를 경우 DTO필드 위에 @JsonProperty을 작성해 주어야 한다. 해당 키와 변수가 자동으로 매핑된다. 
 
+<h2>fetch</h2>
+fetch('api_주소,{ &ensp;//요청 메서드(GET, POST, PATCH, DELETE)<br/>
+&ensp;  method: 'POST', &ensp;// 헤더 정보<br/>
+&ensp;  headers: { <br/>
+&ensp;&ensp;    "Content-Type": "application/json" <br/>
+&ensp;  }, <br/>
+&ensp; body: JSON.stringify(객체) &ensp;// 전송 데이터<br/>
+}).then(response => {&ensp; // 응답을 받아 처리하는 구문<br/>
+&ensp; 응답처리문; <br/>
+});  
+    
+  
+  
 
 
 
