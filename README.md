@@ -93,7 +93,8 @@ fetch('api_주소,{ &ensp;//요청 메서드(GET, POST, PATCH, DELETE)<br/>
 &ensp; 응답처리문; <br/>
 });  
     
-  
+<h2>querySelectorAll("CSS_선택자_문법")</h2>
+선택자로 지정한 모든요소를 찾아 반환, 이문서에 있는 모든 삭제버튼을 선택 가능 / querySelector() 하면 처음 누른 것만 가능
   
 
 
